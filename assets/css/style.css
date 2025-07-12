@@ -215,7 +215,7 @@ main {
   margin-top: 2.5rem;
 }
 
-.proyecto-card {
+.card {
   background-color: #111;
   border-radius: 8px;
   padding: 1.7rem 1.4rem;
@@ -229,18 +229,63 @@ main {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.proyecto-card:hover,
-.proyecto-card:focus-within {
+.card:hover,
+.card:focus-within {
   transform: translateY(-7px);
   box-shadow: 0 8px 24px rgba(74, 144, 226, 0.6);
   outline: none;
 }
 
-.proyecto-card h3 {
+/* Estilo base para todas las cards */
+.card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden;
+  height: 300px;
+}
+
+/* Overlay oscuro para mejorar contraste */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* Asegura que el contenido esté sobre el overlay */
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Fondo específico para cada card */
+#card1 {
+  background-image: url(../imgs/imgblog.png);
+}
+#card2 {
+  background-image: url(../imgs/cardlanding.png);
+}
+#card3 {
+  background-image: url(../imgs/animalcard.png);
+}
+#card4 {
+  background-image: url(../imgs/cuponcard.png);
+}
+
+.card h3 {
   color: #60a3d9;
   margin-bottom: 0.8rem;
   font-size: 1.5rem;
   text-shadow: 0 0 3px #4a90e2;
+}
+
+.card p {
+  font-weight: 700;
 }
 
 .proyecto-links {
