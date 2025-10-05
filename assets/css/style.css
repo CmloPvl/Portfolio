@@ -265,7 +265,7 @@ main {
 
 /* Fondo específico para cada card */
 #card1 {
-  background-image: url(../imgs/imgblog.png);
+  background-image: url(../imgs/blog.png);
 }
 #card2 {
   background-image: url(../imgs/cardlanding.png);
@@ -275,6 +275,18 @@ main {
 }
 #card4 {
   background-image: url(../imgs/cuponcard.png);
+}
+#card5 {
+  background-image: url(../imgs/mensajeria.png);
+}
+#card6 {
+  background-image: url(../imgs/Adventrip.png);
+}
+#card7 {
+  background-image: url(../imgs/vinylgroove.png);
+}
+#card8 {
+  background-image: url(../imgs/CardconJS.png);
 }
 
 .card h3 {
